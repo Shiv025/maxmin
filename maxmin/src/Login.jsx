@@ -13,17 +13,21 @@ const Login = (props) => {
         console.log(email);
     }
   return (
+    <div className='form-container'>
+      
     <div className="container">
     <form className="login-form" onSubmit={haddleSubmit}>
-        <label htmlFor="email">email</label>
+        <label htmlFor="email">Email</label>
         <input value={email} onChange={(e)=> setEmail(e.target.value)} type="text" placeholder='Youremail@gmail.com' id='email' name='email'/>
         <label htmlFor="Password">Password</label>
         <input value={pass} onChange={(e)=> setPass(e.target.value)} type="Password" placeholder='*******' id='Password' name='Password'/>
         <button type="submit" className="btn">Login</button>
     </form>
-    <p className='p-tag'>Don't have an account? Register here.</p>
+    <p className='p-tag'>Don't have an account?</p>
     <button onClick={()=> props.onFormSwitch('register')}  className="btn">Register here</button>
     </div>
+    </div>
+  
   )
 }
 

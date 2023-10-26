@@ -21,7 +21,7 @@ const Register = (props) => {
         <label htmlFor="pass">Password</label>
         <input value={pass} onChange={(e)=> setPass(e.target.value)} type="text" placeholder="***********"/>
         <button type="submit" className="btn">Login</button>
-        <p className='p-tag'>Already Have an Account? Login here.</p>
+        <p className='p-tag'>Already Have an Account?</p>
     <button onClick={()=> props.onFormSwitch('login')} className="btn">Login here</button>
     </form>
     
